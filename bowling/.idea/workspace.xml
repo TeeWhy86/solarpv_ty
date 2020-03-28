@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="18da35fc-ac48-4dd1-9126-67c0e570d2c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/bowling/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bowling/asgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bowling/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bowling/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bowling/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bowling_site/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bowling_site/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bowling_site/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bowling_site/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bowling_site/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bowling_site/static/About.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bowling_site/static/BowlersBlissCSS.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bowling_site/static/Contact.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bowling_site/static/RegistrationCSS.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bowling_site/templates/bowling_site/About.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bowling_site/templates/bowling_site/BowlersBliss.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bowling_site/templates/bowling_site/BowlersBlissRegistration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bowling_site/templates/bowling_site/Contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bowling_site/templates/bowling_site/Login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bowling_site/templates/bowling_site/WIP.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bowling_site/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bowling_site/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bowling_site/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1ZlFy5h7v13t0Ie3jjq8ZIRK0Ms" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="18da35fc-ac48-4dd1-9126-67c0e570d2c5" name="Default Changelist" comment="" />
+      <created>1585406024558</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585406024558</updated>
+      <workItem from="1585406026004" duration="186000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="620" y="260" key="FileChooserDialogImpl" timestamp="1585406213524">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="620" y="260" key="FileChooserDialogImpl/-1600.0.1600.860/0.0.1680.1010@0.0.1680.1010" timestamp="1585406213524" />
+    <state x="710" y="398" key="Github.ShareDialog" timestamp="1585406171186">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="710" y="398" key="Github.ShareDialog/-1600.0.1600.860/0.0.1680.1010@0.0.1680.1010" timestamp="1585406171186" />
+    <state x="619" y="210" key="Github.UntrackedFilesDialog" timestamp="1585406202034">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="619" y="210" key="Github.UntrackedFilesDialog/-1600.0.1600.860/0.0.1680.1010@0.0.1680.1010" timestamp="1585406202034" />
+  </component>
+</project>

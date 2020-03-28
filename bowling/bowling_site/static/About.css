@@ -1,0 +1,94 @@
+/*BODY*/
+
+body {
+    /*    background-image: url(clouds.jpg);*/
+}
+
+
+/*HEADER*/
+
+header h1 {
+    font-size: 50px;
+    top: 0;
+    color: navy;
+}
+
+
+/*NAV*/
+
+nav {}
+
+nav ul {}
+
+nav ul li {
+    font-size: 20px;
+    float: left;
+    padding: 15px;
+    list-style: none;
+}
+
+
+/*SECTION*/
+
+section article {
+    text-align: center;
+    height: 70%;
+    padding: 5px;
+}
+
+section h2 {
+    text-align: center;
+}
+
+#art1 {
+    background: skyblue;
+    height: auto;
+    font-size: 20px;
+}
+
+#art2 {
+    background: black;
+    height: auto;
+    font-size: 20px;
+}
+
+
+/*DIV*/
+
+#divL {
+    float: left;
+    text-align: left;
+    bottom: 0;
+}
+
+#divC {
+    text-align: center;
+    bottom: 0;
+}
+
+
+/*LINKS*/
+
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: red;
+}
+
+#link2 {
+    color: black;
+    padding: 2px;
+    font-size: 1em;
+    list-style: none;
+}
