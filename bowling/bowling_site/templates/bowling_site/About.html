@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-   <link rel="stylesheet" type="text/css" href="About.css">
+{% load static %}
+   <link rel="stylesheet" type="text/css" href="{% static 'About.css' %}">
 <title>Bowlers Bliss</title>
 
 <body>
@@ -13,12 +14,12 @@
 
     <nav>
         <ul>
-            <li><a href="BowlersBliss.html">Home</a></li>
+            <li><a href="/home">Home</a></li>
             <li><a>Bowlers</a></li>
             <li><a>Alleys</a></li>
             <li><a>Gear</a></li>
-            <li><a href="About.html">About Us</a></li>
-            <li><a href="Contact.html">Contact Us</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact Us</a></li>
         </ul>
     </nav>
     <br>
@@ -79,7 +80,7 @@
         <br>
 
         <li id="link2">
-            <a href="WIP.html">Site Map</a> | <a href="WIP.html">Terms & Conditions</a> | <a href="WIP.html">Privacy Policy</a> | <a href="About.html">About Us</a></li>
+            <a href="/wip">Site Map</a> | <a href="/wip">Terms & Conditions</a> | <a href="/wip">Privacy Policy</a> | <a href="/about">About Us</a></li>
     </div>
 
     <div id="divC">

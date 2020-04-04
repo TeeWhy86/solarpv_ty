@@ -1,6 +1,11 @@
+from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
+
+
+def index(request):
+    return HttpResponse('This is the Index Page...')
 
 
 def bowling_site_home(request):
@@ -31,7 +36,7 @@ def bowling_site_contact(request):
     return render(request, "Contact.html")
 
 
-def bowling_site_login(request):
+def bowling_site_log(request):
 
     # render function takes argument - request
     # and return HTML as response
