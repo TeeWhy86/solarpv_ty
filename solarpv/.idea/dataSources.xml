@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="solarpvdb@localhost" uuid="eadb87fd-2399-40e0-aad3-b338ac3570ee">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/solarpvdb</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="bowling@localhost" uuid="fa94c6ec-7f63-48e1-a878-c35f9510b628">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/bowling</jdbc-url>
+    </data-source>
+  </component>
+</project>

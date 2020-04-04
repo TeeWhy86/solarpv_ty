@@ -1,0 +1,138 @@
+/*HEADER*/
+
+header {
+    border: 1px solid black;
+    width: 99%;
+    padding: 5px;
+}
+
+#h31 {
+    padding-left: 2px;
+    color: blue;
+}
+
+h4 a {
+    padding: 5px
+}
+
+/*NAV*/
+
+nav {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: right;
+    width: 99%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+/*LINKS*/
+
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: red;
+}
+
+#link2 {
+    color: black;
+    padding: 2px;
+    font-size: 1em;
+    list-style: none;
+}
+
+
+/*BORDERS
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+*/
+
+
+/*SECTION*/
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*ARTICLE*/
+
+article {
+    float: left;
+    border: 1px solid black;
+}
+
+
+/*PARAGRAPHS*/
+
+#ul {
+    list-style: circle;
+}
+
+
+/*LISTS*/
+
+#li1 {
+    font-weight: bold;
+    float: right;
+    padding: 10px;
+}
+
+#li2 {
+    font-weight: bold;
+    float: left;
+    padding: 10px;
+}
+
+
+/*FOOTER*/
+
+footer {
+    margin-top: 100px;
+    bottom: 0;
+    width: 99%;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    height: 60px;
+}
+
+#div1 {
+    float: left;
+    text-align: left;
+    width: 33%
+}
+
+#div2 {
+    float: left;
+    text-align: center;
+    width: 33%
+}
