@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="SolarPVLogin_Style.css">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'SolarPVLogin_Style.css' %}">
 
     <title>login</title>
     <style>
@@ -16,7 +17,7 @@
 
 <body>
     <header>
-        <h4><a href="WIP.html">About Us</a> <a href="WIP.html">Contact Us</a></h4>
+        <h4><a href="/wip">About Us</a> <a href="/wip">Contact Us</a></h4>
         <h1>
             solarPV
 
@@ -34,8 +35,8 @@
             <li id="li1"><a>PV Systems</a></li>
             <li id="li1"><a>PV Module</a></li>
             <li id="li1"><a>Racks & Trackers</a></li>
-            <li id="li2"><a href="SolarPV.html">Home</a></li>
-            <li id="li2"><a href="SolarPVWebPortal.html">Web Portal</a></li>
+            <li id="li2"><a href="/home">Home</a></li>
+            <li id="li2"><a href="/wp">Web Portal</a></li>
         </ul>
     </nav>
 
@@ -76,7 +77,7 @@
             <br> Address, Phone, Email, Website
 
             <li id="link2">
-                <a href="WIP.html">Site Map</a> | <a href="WIP.html">Terms & Conditions</a> | <a href="WIP.html">Privacy Policy</a> | <a href="WIP.html">About Us</a></li>
+                <a href="/wip">Site Map</a> | <a href="/wip">Terms & Conditions</a> | <a href="/wip">Privacy Policy</a> | <a href="/wip">About Us</a></li>
         </div>
 
         <div id=div2>
