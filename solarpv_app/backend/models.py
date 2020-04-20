@@ -22,7 +22,7 @@ class Location(models.Model):
 
 
 class Product(models.Model):
-    modelnum = models.IntegerField(primary_key=True)
+    modelnum = models.CharField(primary_key=True, max_length=60)
     name = models.CharField(max_length=60)
     celltechnology = models.CharField(max_length=60)
     manufacturer = models.CharField(max_length=60)
@@ -44,6 +44,12 @@ class Product(models.Model):
     junctype = models.CharField(max_length=60)
     juncmanufacturer = models.CharField(max_length=60)
 
+    class Meta:
+        ordering = ['modelnum']
+
+        def __str__(self):
+            return self.modelnum
+
 
 class TestStandard(models.Model):
     standardid = models.AutoField(primary_key=True)
@@ -60,9 +66,9 @@ class User(models.Model):
     middle = models.CharField(max_length=60)
     last = models.CharField(max_length=60)
     job = models.CharField(max_length=60)
-    email = models.EmailField()
-    office = models.CharField(max_length=60)
-    cell = models.CharField(max_length=60)
+    email = models.EmailField(help_text='sample@gmail.com')
+    office = models.CharField(max_length=60, help_text='Enter as XXX-XXX-XXXX')
+    cell = models.CharField(max_length=60, help_text='Enter as XXX-XXX-XXXX')
     prefix = models.CharField(max_length=60)
     clientid = models.ForeignKey(Client, on_delete=models.CASCADE)
     # staff = models.CharField(max_length=60)
@@ -72,15 +78,24 @@ class Certificate(models.Model):
     certid = models.AutoField(primary_key=True)
     userID = models.ForeignKey(User, on_delete=models.CASCADE)
     reportnum = models.IntegerField()
-    issuedate = models.DateField()
+    issuedate = models.DateField(auto_now_add=True)
     standardid = models.ForeignKey(TestStandard, on_delete=models.CASCADE)
     locationid = models.ForeignKey(Location, on_delete=models.CASCADE)
     modelnum = models.ForeignKey(Product, on_delete=models.CASCADE)
+
+    class Meta:
+        ordering = ['issuedate']
+
+        def __str__(self):
+            return self.certid
 
 
 class TestSequence(models.Model):
     sequenceid = models.AutoField(primary_key=True)
     sequencename = models.CharField(max_length=60)
+
+    class Meta:
+        ordering = ['sequencename']
 
 
 class Performance(models.Model):
@@ -100,5 +115,9 @@ class Service(models.Model):
     servicename = models.CharField(max_length=60)
     description = models.CharField(max_length=255)
     firequired = models.BooleanField()
-    fifequency = models.CharField(max_length=60)
+    fifrequency = models.CharField(max_length=60)
     standardid = models.ForeignKey(TestStandard, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.serviceid
+

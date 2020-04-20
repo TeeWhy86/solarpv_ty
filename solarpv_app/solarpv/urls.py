@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+# from solarpv_app.backend import views
 from backend.views import create_client, list_client, detail_client, update_client, delete_client
 
 urlpatterns = [
@@ -24,5 +25,6 @@ urlpatterns = [
     path('detail/<id>', detail_client),
     path('update/<id>', update_client),
     path('delete/<id>', delete_client),
+    path('api/', include('backend.api.url', namespace='api')),
     path('admin/', admin.site.urls),
 ]

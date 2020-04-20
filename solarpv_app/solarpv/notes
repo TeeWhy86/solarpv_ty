@@ -1,0 +1,9 @@
+Virtual Environment and Run Server:
+1.	Shift right-click your project folder to open a command window.
+2.	Type in venv_solarpv\scripts\activate to run your virtual environment.
+3.	Change into your site directory (cd solarpv_ty/solarpv_app) to run manage.py commands (e.g. runserver).
+
+Create Superuser:
+1.  python3 manage.py createsuperuser
+2.  user: ty
+3.  password: i
