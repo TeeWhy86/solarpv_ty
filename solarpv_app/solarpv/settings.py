@@ -19,11 +19,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '1488o8)_&3^-36cm=0%b^l-b=42z4aqvualkf+%)x(g@8%ybn_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
+ADMINS = (
+    ('Ty', 'ty.thompson86@gmail.com'),
+)
 ALLOWED_HOSTS = []
 
 # Application definition
@@ -38,7 +40,7 @@ INSTALLED_APPS = [
 
     # own
     'solarpvsite',
-    'backend',
+    # 'backend',
     'rest_framework'
 ]
 
@@ -74,6 +76,13 @@ TEMPLATES = [
         },
     },
 ]
+
+# List of callables that know how to import templates from various sources.
+TEMPLATE_LOADERS = (
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
+    #     'django.template.loaders.eggs.Loader',
+)
 
 WSGI_APPLICATION = 'solarpv.wsgi.application'
 
@@ -133,6 +142,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+# List of finder classes that know how to find static files in
+# various locations.
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
+)
+
+STATIC_ROOT = '/assets/solarpvsite/static'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'solarpvsite/static/solarpvsite'),

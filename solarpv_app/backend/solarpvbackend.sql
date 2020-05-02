@@ -114,6 +114,6 @@ create table certificate
         foreign key (teststandard) references teststandard (standardID)
             on update cascade on delete cascade,
     constraint certificate_user_UserID_fk
-        foreign key (contactID) references user (UserID)
+        foreign key (contactID) references solarpvsite_user (UserID)
             on update cascade on delete cascade
 );

@@ -3,11 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>SolarPV</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'Base.css' %}">
+
 </head>
 <body>
-{% block content %}
-    replace me
-{% endblock %}
+    <header>
+        <h4 style="float: right"><a href="/wip">About Us</a> <a href="/wip">Contact Us</a></h4>
+        <h1>
+            solarPV
+
+        </h1>
+        <h3>Research & Development
+        </h3>
+    </header>
+
+    <nav>
+        <ul>
+            <li id="li1"><a>Cybersecurity</a></li>
+            <li id="li1"><a>Data Analytics</a></li>
+            <li id="li1"><a>PV Systems</a></li>
+            <li id="li1"><a>PV Module</a></li>
+            <li id="li1"><a>Racks & Trackers</a></li>
+            <li id="li2"><a href="/">Home</a></li>
+            <li id="li2"><a href="/wp">Web Portal</a></li>
+        </ul>
+    </nav>
+
+    {% block content %}
+        replace me
+    {% endblock %}
+
+    <footer>
+        <div id=div1>
+            <b>solarPV</b>
+            <br> Address, Phone, Email, Website
+
+            <li id="link2">
+                <a href="/wip">Site Map</a> | <a href="/wip">Terms & Conditions</a> | <a href="/wip">Privacy Policy</a> | <a href="/wip">About Us</a></li>
+        </div>
+
+        <div id=div2>
+            @ 2020 All Rights Reserved
+        </div>
+    </footer>
+
 
 </body>
 </html>

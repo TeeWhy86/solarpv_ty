@@ -20,13 +20,13 @@ CREATE TABLE User (
 CREATE TABLE Manufacturer (
     Name VARCHAR(255) NOT NULL,
     RegisteredCountry VARCHAR(255) NOT NULL,
-    ContactPerson VARCHAR(255) REFERENCES User (username)
+    ContactPerson VARCHAR(255) REFERENCES solarpvsite_user (username)
 );
 
 CREATE TABLE TestLab (
     name VARCHAR(255) NOT NULL,
     address VARCHAR(255) NOT NULL,
-    contactPerson VARCHAR(255) REFERENCES User (username)
+    contactPerson VARCHAR(255) REFERENCES solarpvsite_user (username)
 );
 
 CREATE TABLE TestResults (
@@ -83,7 +83,7 @@ CREATE TABLE Product (
 );
 
 
-INSERT INTO User (UserID, username, Password, firstName, middleName, lastName, address, officePhone, cellPhone, email) VALUES
+INSERT INTO solarpvdb.User (UserID, username, Password, firstName, middleName, lastName, address, officePhone, cellPhone, email) VALUES
 (1, 'JChap', 'AhfahChoo7', 'Jeanette', 'Flag', 'Chapman', '706 Davis Avenue', '707-737-7333', '662-373-5527', 'JeanetteWChapman@armyspy.com'),
 (2, 'AMoral', 'weeF7eyeimie', 'Athena', 'Hicks', 'Morales', '2492 Brownton Road', '707-737-7333', '662-373-5527', 'AthenaWMorales@teleworm.us'),
 (3, 'RBuck', 'Fu4TaeJah3j', 'Robert', 'Cobra', 'Buckman', '832 Granville Lane', '707-737-7333', '662-373-5527', 'RobertEBuckman@teleworm.us'),
@@ -113,7 +113,7 @@ create table certificate
         foreign key (teststandard) references teststandard (standardID)
             on update cascade on delete cascade,
     constraint certificate_user_UserID_fk
-        foreign key (contactID) references user (UserID)
+        foreign key (contactID) references solarpvsite_user (UserID)
             on update cascade on delete cascade
 );
 

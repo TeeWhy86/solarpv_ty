@@ -1,110 +1,127 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'SolarPVRegistration_Style.css' %}">
+{% extends 'base.html' %}
+{#    {% load static %}#}
+{#    <link rel="stylesheet" type="text/css" href="{% static 'SolarPVRegistration_Style.css' %}">#}
     <title>solarPV</title>
-    <style>
-        body {
-            background-color: white;
-        }
-    </style>
-</head>
-
-<body>
-    <header style="border: 1px solid black">
-        <h4 style="float: right"><a href="/wip">About Us</a> <a href="/wip">Contact Us</a></h4>
-        <h1>
-            solarPV
-
-        </h1>
-        <h3>Research & Development
-        </h3>
-    </header>
 
 
+{% block content %}
+    <h2>Registration Form</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Submit" />
+    </form>
 
-    <nav>
-        <ul>
-            <li id="li1"><a>Cybersecurity</a></li>
-            <li id="li1"><a>Data Analytics</a></li>
-            <li id="li1"><a>PV Systems</a></li>
-            <li id="li1"><a>PV Module</a></li>
-            <li id="li1"><a>Racks & Trackers</a></li>
-            <li id="li2"><a href="/">Home</a></li>
-            <li id="li2"><a href="/wp">Web Portal</a></li>
-        </ul>
-    </nav>
+{% endblock %}
 
 
-
-    <section>
-        <h2>Registration Form</h2>
-        <form>
-            <div>First Name:</div>
-            <input type="text" name="firtname" placeholder="Required">
-            <br>
-            <div>Middle Name:</div>
-            <input type="text" name="middlename">
-            <br>
-            <div>Last Name:</div>
-            <input type="text" name="lastname" placeholder="Required">
-            <br>
-            <div>Job Title:</div>
-            <input type="text" name="title">
-            <div>Email:</div>
-            <input type="text" name="title">
-        </form>
-        <form>
-            <div>Office Phone:</div>
-            <input type="text" name="title">
-            <div>Cell Phone:</div>
-            <input type="text" name="title">
-            <div>Prefix:</div>
-            <input type="text" name="title">
-            <div>Staff Member:</div>
-            <select>
-                <option value="Y">Yes</option>
-                <option value="N">No</option>
-            </select>
-        </form>
-    </section>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <footer>
-        <div id=div1>
-            <b>solarPV</b>
-            <br> Address, Phone, Email, Website
-
-            <li id="link2">
-                <a href="/wip">Site Map</a> | <a href="/wip">Terms & Conditions</a> | <a href="/wip">Privacy Policy</a> | <a href="/wip">About Us</a></li>
-        </div>
-
-        <div id=div2>
-            @ 2020 All Rights Reserved
-        </div>
-    </footer>
-
-
-
-</body>
-
-</html>
+{#<!DOCTYPE html>#}
+{#<html xmlns="http://www.w3.org/1999/xhtml">#}
+{##}
+{#<head>#}
+{#    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />#}
+{#    {% load static %}#}
+{#    <link rel="stylesheet" type="text/css" href="{% static 'SolarPVRegistration_Style.css' %}">#}
+{#    <title>solarPV</title>#}
+{#    <style>#}
+{#        body {#}
+{#            background-color: white;#}
+{#        }#}
+{#    </style>#}
+{#</head>#}
+{##}
+{#<body>#}
+{#    <header style="border: 1px solid black">#}
+{#        <h4 style="float: right"><a href="/wip">About Us</a> <a href="/wip">Contact Us</a></h4>#}
+{#        <h1>#}
+{#            solarPV#}
+{##}
+{#        </h1>#}
+{#        <h3>Research & Development#}
+{#        </h3>#}
+{#    </header>#}
+{##}
+{##}
+{##}
+{#    <nav>#}
+{#        <ul>#}
+{#            <li id="li1"><a>Cybersecurity</a></li>#}
+{#            <li id="li1"><a>Data Analytics</a></li>#}
+{#            <li id="li1"><a>PV Systems</a></li>#}
+{#            <li id="li1"><a>PV Module</a></li>#}
+{#            <li id="li1"><a>Racks & Trackers</a></li>#}
+{#            <li id="li2"><a href="/">Home</a></li>#}
+{#            <li id="li2"><a href="/wp">Web Portal</a></li>#}
+{#        </ul>#}
+{#    </nav>#}
+{##}
+{##}
+{##}
+{#    <section>#}
+{#        <h2>Registration Form</h2>#}
+{#        <form>#}
+{#            <div>First Name:</div>#}
+{#            <input type="text" name="firtname" placeholder="Required">#}
+{#            <br>#}
+{#            <div>Middle Name:</div>#}
+{#            <input type="text" name="middlename">#}
+{#            <br>#}
+{#            <div>Last Name:</div>#}
+{#            <input type="text" name="lastname" placeholder="Required">#}
+{#            <br>#}
+{#            <div>Job Title:</div>#}
+{#            <input type="text" name="title">#}
+{#            <div>Email:</div>#}
+{#            <input type="text" name="title">#}
+{#        </form>#}
+{#        <form>#}
+{#            <div>Office Phone:</div>#}
+{#            <input type="text" name="title">#}
+{#            <div>Cell Phone:</div>#}
+{#            <input type="text" name="title">#}
+{#            <div>Prefix:</div>#}
+{#            <input type="text" name="title">#}
+{#            <div>Staff Member:</div>#}
+{#            <select>#}
+{#                <option value="Y">Yes</option>#}
+{#                <option value="N">No</option>#}
+{#            </select>#}
+{#        </form>#}
+{#    </section>#}
+{##}
+{#    <br>#}
+{#    <br>#}
+{#    <br>#}
+{#    <br>#}
+{#    <br>#}
+{#    <br>#}
+{#    <br>#}
+{#    <br>#}
+{#    <br>#}
+{#    <br>#}
+{#    <br>#}
+{#    <br>#}
+{#    <br>#}
+{#    <br>#}
+{#    <br>#}
+{#    <br>#}
+{##}
+{#    <footer>#}
+{#        <div id=div1>#}
+{#            <b>solarPV</b>#}
+{#            <br> Address, Phone, Email, Website#}
+{##}
+{#            <li id="link2">#}
+{#                <a href="/wip">Site Map</a> | <a href="/wip">Terms & Conditions</a> | <a href="/wip">Privacy Policy</a> | <a href="/wip">About Us</a></li>#}
+{#        </div>#}
+{##}
+{#        <div id=div2>#}
+{#            @ 2020 All Rights Reserved#}
+{#        </div>#}
+{#    </footer>#}
+{##}
+{##}
+{##}
+{#</body>#}
+{##}
+{#</html>#}

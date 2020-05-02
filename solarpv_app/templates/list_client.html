@@ -1,0 +1,16 @@
+{% block content %}
+    <div class="main">
+
+        {% for data in dataset %}.
+
+            <br>
+            {{ data.id }}<br/>
+            {{ data.clientCode }}<br/>
+            {{ data.clientName }}<br/>
+            {{ data.clientType }}<br/>
+            <hr/>
+
+        {% endfor %}
+
+    </div>
+{% endblock %}

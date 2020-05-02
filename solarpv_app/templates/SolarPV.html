@@ -1,132 +1,195 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+{% extends 'base.html' %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'SolarPV_Style.css' %}">
+
+{% block content %}
+
+        <section>
+            <article style="width: 30%; height: 70%">
+                <h4 style="text-align: center"><a href="/reg">Register</a> | <a href="/log">Login</a></h4>
+                <h3 id="h31">PV Module</h3>
+                <ul>
+                    <li><a href="cert_search/">Testing & Certification</a></li>
+                    <li>PV Rating</li>
+                </ul>
+                <h3 id="h31">PV System Performance</h3>
+                <ul>
+                    <li>PV System Performance</li>
+                    <li>Performance Analysis</li>
+                    <li>Compare System</li>
+                    <li>Certification</li>
+                </ul>
+                <h3 id="h31">Data Analytics</h3>
+                <ul>
+                    <li>Module lifetime prediction</li>
+                    <li>Energy Prediction</li>
+                </ul>
+                <h3 id="h31">Cybersecurity and Smart Grid Technologies</h3>
+
+                <h3 id="h31">Solar PV University</h3>
 
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'SolarPV_Style.css' %}">
-    <title>solarPV</title>
-    <style>
-        body {
-            background-color: white;
-        }
-    </style>
-</head>
+            </article>
+            <article style="width: 49%; height: 70%; text-align: center">
+                <h4>Feature contents</h4>
+                <p>Some text as a placeholder...</p>
+                <p>Some text as a placeholder...</p>
+                <p>Some text as a placeholder...</p>
+                <p>Some text as a placeholder...</p>
+                <p>Some text as a placeholder...</p>
+                <p>Some text as a placeholder...</p>
+                <p>Some text as a placeholder...</p>
+                <p>Some text as a placeholder...</p>
+                <p>Some text as a placeholder...</p>
+                <p>Some text as a placeholder...</p>
+                <p>Some text as a placeholder...</p>
+                <p>Some text as a placeholder...</p>
 
-<body>
-    <header>
-        <h4 style="float: right"><a href="/wip">About Us</a> <a href="/wip">Contact Us</a></h4>
-        <h1>
-            solarPV
+            </article>
+            <article style="width: 20%; height: 70%; text-align: center">
+                <h4>News & Events</h4>
+                <p style="text-decoration: underline"><a href="/wip">PhotoVoltaic Technical Conference to take place in Marseille, France from 26 to 28 April 2017</a></p>
+                <p style="text-decoration: underline"><a href="/wip">Trump is next US president</a></p>
+                <p style="text-decoration: underline"><a href="/wip">Syrian forces recapture Aleppo</a></p>
+                <p style="text-decoration: underline"><a href="/wip">Senate votes on SCOTUS nominee</a></p>
 
-        </h1>
-        <h3>Research & Development
-        </h3>
-    </header>
-
-
-
-    <nav>
-        <ul>
-            <li id="li1"><a>Cybersecurity</a></li>
-            <li id="li1"><a>Data Analytics</a></li>
-            <li id="li1"><a>PV Systems</a></li>
-            <li id="li1"><a>PV Module</a></li>
-            <li id="li1"><a>Racks & Trackers</a></li>
-            <li id="li2"><a href="/">Home</a></li>
-            <li id="li2"><a href="/wp">Web Portal</a></li>
-        </ul>
-    </nav>
+            </article>
+        </section>
 
 
-
-    <section>
-        <article style="width: 30%; height: 70%">
-            <h4 style="text-align: center"><a href="/reg">Register</a> | <a href="/login">Login</a></h4>
-            <h3 id="h31">PV Module</h3>
-            <ul>
-                <li>Testing & Certification</li>
-                <li>PV Rating</li>
-            </ul>
-            <h3 id="h31">PV System Performance</h3>
-            <ul>
-                <li>PV System Performance</li>
-                <li>Performance Analysis</li>
-                <li>Compare System</li>
-                <li>Certification</li>
-            </ul>
-            <h3 id="h31">Data Analytics</h3>
-            <ul>
-                <li>Module lifetime prediction</li>
-                <li>Energy Prediction</li>
-            </ul>
-            <h3 id="h31">Cybersecurity and Smart Grid Technologies</h3>
-
-            <h3 id="h31">Solar PV University</h3>
-
-
-        </article>
-        <article style="width: 49%; height: 70%; text-align: center">
-            <h4>Feature contents</h4>
-            <p>Some text as a placeholder...</p>
-            <p>Some text as a placeholder...</p>
-            <p>Some text as a placeholder...</p>
-            <p>Some text as a placeholder...</p>
-            <p>Some text as a placeholder...</p>
-            <p>Some text as a placeholder...</p>
-            <p>Some text as a placeholder...</p>
-            <p>Some text as a placeholder...</p>
-            <p>Some text as a placeholder...</p>
-            <p>Some text as a placeholder...</p>
-            <p>Some text as a placeholder...</p>
-            <p>Some text as a placeholder...</p>
-
-        </article>
-        <article style="width: 20%; height: 70%; text-align: center">
-            <h4>News & Events</h4>
-            <p style="text-decoration: underline"><a href="/wip">PhotoVoltaic Technical Conference to take place in Marseille, France from 26 to 28 April 2017</a></p>
-            <p style="text-decoration: underline"><a href="/wip">Trump is next US president</a></p>
-            <p style="text-decoration: underline"><a href="/wip">Syrian forces recapture Aleppo</a></p>
-            <p style="text-decoration: underline"><a href="/wip">Senate votes on SCOTUS nominee</a></p>
-
-        </article>
-    </section>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-
-    <footer>
-        <div id=div1>
-            <b>solarPV</b>
-            <br> Address, Phone, Email, Website
-
-            <li id="link2">
-                <a href="/wip">Site Map</a> | <a href="/wip">Terms & Conditions</a> | <a href="/wip">Privacy Policy</a> | <a href="/wip">About Us</a></li>
-        </div>
-
-        <div id=div2>
-            @ 2020 All Rights Reserved
-        </div>
-    </footer>
+{% endblock %}
 
 
 
-</body>
-    
-</html>
+{#<!DOCTYPE html>#}
+{#<html xmlns="http://www.w3.org/1999/xhtml">#}
+{##}
+{##}
+{#<head>#}
+{#    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />#}
+{#    {% load static %}#}
+{#    <link rel="stylesheet" type="text/css" href="{% static 'SolarPV_Style.css' %}">#}
+{#    <title>solarPV</title>#}
+{#    <style>#}
+{#        body {#}
+{#            background-color: white;#}
+{#        }#}
+{#    </style>#}
+{#</head>#}
+{##}
+{#<body>#}
+{#    <header>#}
+{#        <h4 style="float: right"><a href="/wip">About Us</a> <a href="/wip">Contact Us</a></h4>#}
+{#        <h1>#}
+{#            solarPV#}
+{##}
+{#        </h1>#}
+{#        <h3>Research & Development#}
+{#        </h3>#}
+{#    </header>#}
+{##}
+{##}
+{##}
+{#    <nav>#}
+{#        <ul>#}
+{#            <li id="li1"><a>Cybersecurity</a></li>#}
+{#            <li id="li1"><a>Data Analytics</a></li>#}
+{#            <li id="li1"><a>PV Systems</a></li>#}
+{#            <li id="li1"><a>PV Module</a></li>#}
+{#            <li id="li1"><a>Racks & Trackers</a></li>#}
+{#            <li id="li2"><a href="/">Home</a></li>#}
+{#            <li id="li2"><a href="/wp">Web Portal</a></li>#}
+{#        </ul>#}
+{#    </nav>#}
+{##}
+{##}
+{##}
+{#    <section>#}
+{#        <article style="width: 30%; height: 70%">#}
+{#            <h4 style="text-align: center"><a href="/reg">Register</a> | <a href="/login">Login</a></h4>#}
+{#            <h3 id="h31">PV Module</h3>#}
+{#            <ul>#}
+{#                <li>Testing & Certification</li>#}
+{#                <li>PV Rating</li>#}
+{#            </ul>#}
+{#            <h3 id="h31">PV System Performance</h3>#}
+{#            <ul>#}
+{#                <li>PV System Performance</li>#}
+{#                <li>Performance Analysis</li>#}
+{#                <li>Compare System</li>#}
+{#                <li>Certification</li>#}
+{#            </ul>#}
+{#            <h3 id="h31">Data Analytics</h3>#}
+{#            <ul>#}
+{#                <li>Module lifetime prediction</li>#}
+{#                <li>Energy Prediction</li>#}
+{#            </ul>#}
+{#            <h3 id="h31">Cybersecurity and Smart Grid Technologies</h3>#}
+{##}
+{#            <h3 id="h31">Solar PV University</h3>#}
+{##}
+{##}
+{#        </article>#}
+{#        <article style="width: 49%; height: 70%; text-align: center">#}
+{#            <h4>Feature contents</h4>#}
+{#            <p>Some text as a placeholder...</p>#}
+{#            <p>Some text as a placeholder...</p>#}
+{#            <p>Some text as a placeholder...</p>#}
+{#            <p>Some text as a placeholder...</p>#}
+{#            <p>Some text as a placeholder...</p>#}
+{#            <p>Some text as a placeholder...</p>#}
+{#            <p>Some text as a placeholder...</p>#}
+{#            <p>Some text as a placeholder...</p>#}
+{#            <p>Some text as a placeholder...</p>#}
+{#            <p>Some text as a placeholder...</p>#}
+{#            <p>Some text as a placeholder...</p>#}
+{#            <p>Some text as a placeholder...</p>#}
+{##}
+{#        </article>#}
+{#        <article style="width: 20%; height: 70%; text-align: center">#}
+{#            <h4>News & Events</h4>#}
+{#            <p style="text-decoration: underline"><a href="/wip">PhotoVoltaic Technical Conference to take place in Marseille, France from 26 to 28 April 2017</a></p>#}
+{#            <p style="text-decoration: underline"><a href="/wip">Trump is next US president</a></p>#}
+{#            <p style="text-decoration: underline"><a href="/wip">Syrian forces recapture Aleppo</a></p>#}
+{#            <p style="text-decoration: underline"><a href="/wip">Senate votes on SCOTUS nominee</a></p>#}
+{##}
+{#        </article>#}
+{#    </section>#}
+{##}
+{#    <br>#}
+{#    <br>#}
+{#    <br>#}
+{#    <br>#}
+{#    <br>#}
+{#    <br>#}
+{#    <br>#}
+{#    <br>#}
+{#    <br>#}
+{#    <br>#}
+{#    <br>#}
+{#    <br>#}
+{#    <br>#}
+{#    <br>#}
+{#    <br>#}
+{#    <br>#}
+{##}
+{##}
+{#    <footer>#}
+{#        <div id=div1>#}
+{#            <b>solarPV</b>#}
+{#            <br> Address, Phone, Email, Website#}
+{##}
+{#            <li id="link2">#}
+{#                <a href="/wip">Site Map</a> | <a href="/wip">Terms & Conditions</a> | <a href="/wip">Privacy Policy</a> | <a href="/wip">About Us</a></li>#}
+{#        </div>#}
+{##}
+{#        <div id=div2>#}
+{#            @ 2020 All Rights Reserved#}
+{#        </div>#}
+{#    </footer>#}
+{##}
+{##}
+{##}
+{#</body>#}
+{#    #}
+{#</html>#}
